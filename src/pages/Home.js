@@ -44,7 +44,7 @@ const Home = () => {
       <hr/>
       <p>Links to code and socials</p>
       <footer className="Footer">
-        <a href="https://github.com/"><img src={GithubLogo} alt="Github Logo" target="_blank"></img></a>
+        <a href="https://github.com/aspect0x7bc/3-Body-Genesis"><img src={GithubLogo} alt="Github Logo" target="_blank"></img></a>
         <a href="https://twitter.com/ThreeBodyNFT"><img src={TwitterLogo} alt="Twitter Logo" target="_blank"></img></a>
         <a href="https://discord.gg/u3duf2AG"><img src={DiscordLogo} alt="Discord Logo" target="_blank"></img></a>
       </footer>

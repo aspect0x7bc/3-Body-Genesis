@@ -20,7 +20,7 @@ const About = () => {
       <p>When a token is minted you choose it's name.</p>
       <p>This name is then hashed and stored on chain as a NotRandom token.</p>
       <p>To convert this hash into a 3-body system we move off chain and generate some initial values (IVs) from the hash.</p>
-      <p>These IVs are the position and velocity vectors (xyz) of each of the three bodies. <a href="www.github.com">code</a></p>
+      <p>These IVs are the position and velocity vectors (xyz) of each of the three bodies. <a href="https://github.com/aspect0x7bc/3-Body-Genesis-Solver/blob/main/solver.py" rel="noopener noreferrer" target="_blank">code</a></p>
       <p>Using these initial conditions and Newton's Law of Gravitation we solve the IVP for time.</p>
       <img src={eqNewton} alt="F = G * m1 * m2 / r^2"/>
       <p>Here this gives us ~1000 points between t = 0 and t = 5 which can then be plotted in 3D space.</p>
@@ -31,7 +31,7 @@ const About = () => {
       <hr/>
       <p>Links to code and socials</p>
       <footer className="Footer">
-        <a href="https://github.com/"><img src={GithubLogo} alt="Github Logo" target="_blank"></img></a>
+        <a href="https://github.com/aspect0x7bc/3-Body-Genesis"><img src={GithubLogo} alt="Github Logo" target="_blank"></img></a>
         <a href="https://twitter.com/ThreeBodyNFT"><img src={TwitterLogo} alt="Twitter Logo" target="_blank"></img></a>
         <a href="https://discord.gg/u3duf2AG"><img src={DiscordLogo} alt="Discord Logo" target="_blank"></img></a>
       </footer>
