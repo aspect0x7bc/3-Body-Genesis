@@ -14,6 +14,7 @@ const ConnectionProvider = (props) => {
   const [block, setBlock] = useState(0);
   const [signerContract, setSignerContract] = useState(null);
   //const provider = new ethers.providers.JsonRpcProvider('https://arb1.arbitrum.io/rpc');
+  // plz dont use my node :D - too lazy to hide in backend xI
   const provider = new ethers.providers.JsonRpcProvider('https://arb-mainnet.g.alchemy.com/v2/ujzK1r0pxgv1s85OABnSqENfQbUJ5kD2');
   const contractAddress = '0x945B6AE5eC8324B1Cc941C41E300cEc60102e4B5';
 
