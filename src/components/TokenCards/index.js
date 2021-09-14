@@ -18,7 +18,7 @@ const TokenCards = ({ setSolution, toggle, tokens }) => {
   const onClick = (token) => {
     axios
       .post(
-        'http://api.3-body.xyz/solve',
+        'https://cryptic-dawn-48229.herokuapp.com/solve',
         {
           'hash': token.hash,
         })

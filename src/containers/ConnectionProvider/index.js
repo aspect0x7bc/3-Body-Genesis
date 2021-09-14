@@ -74,7 +74,7 @@ const ConnectionProvider = (props) => {
         let score = scores[tokenId];
         if (score === undefined) {
           score = 'not loaded - try refreshing the page';
-          axios.post('http://api.3-body.xyz/solve',
+          axios.post('https://cryptic-dawn-48229.herokuapp.com/solve',
             {
               'hash': tokenHash,
             })
@@ -82,7 +82,7 @@ const ConnectionProvider = (props) => {
               const score = res.data[4];
               console.log('tokenId', tokenId.toNumber())
               console.log('score', score)
-              axios.post('http://api.3-body.xyz/scores/',
+              axios.post('https://cryptic-dawn-48229.herokuapp.com/scores/',
               {
                 'tokenId': tokenId.toNumber(),
                 'score': score
@@ -105,7 +105,7 @@ const ConnectionProvider = (props) => {
       })
     }
 
-    axios.get('http://api.3-body.xyz/scores/')
+    axios.get('https://cryptic-dawn-48229.herokuapp.com/scores/')
     .then(res => {
       load(res.data);
     })
