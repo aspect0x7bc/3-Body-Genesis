@@ -1,48 +1,5 @@
-# React Demo
+Hi this is the first website I've deployed since startin to learn about web/react and blockchain development about 4 months ago. I have some physics background from my time in school so thought that could be a fun thing to do.
 
-A repository to demonstrate a basic integration of 
-[Onboard](https://github.com/blocknative/onboard) 
-and [Notify](https://github.com/blocknative/onboard) into a React project.
-For detailed documentation, head to [docs.blocknative.com](https://docs.blocknative.com)
+This code is currently all over the place so I'm working on cleaning it up.
 
-
-<div align="center">
-  <img style="border-radius: 8px" width="75%" src="assets/react-demo.png">
-</div>
-
-View live demo [here](https://reactdemo.blocknative.com/)!
-
-## Getting started
-
-Clone the repo:
-
-```bash
-git clone https://github.com/blocknative/react-demo.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd react-demo
-```
-
-Install the dependencies:
-
-```bash
-yarn
-```
-
-Start the development server:
-
-```bash
-yarn start
-```
-
-The project will be running on [localhost:3000](http://localhost:3000)
-
-### SSL
-Some wallets require that the website within which it runs be using a https 
-connection. If you are testing one of these wallets, Ledger is one, then you have
-two options:
- 1. Setup a valid certificate for localhost using [this guide](https://www.freecodecamp.org/news/how-to-set-up-https-locally-with-create-react-app/).
- 2. Allow invalid certificates for resources loaded from localhost by navigating here within a chrome based browser: [chrome://flags/#allow-insecure-localhost](chrome://flags/#allow-insecure-localhost)
+Thanks for stoping by! If you want to get in touch with me send me a DM on twitter (@0xaspect) :)
