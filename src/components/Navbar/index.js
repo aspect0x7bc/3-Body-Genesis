@@ -14,7 +14,8 @@ import logo from '../../images/three.svg';
 
 const Navbar = ({ toggle }) => {
   
-  const isTransparent = true;
+  // would like to set transpart when a system is rendered
+  const isTransparent = false;
 
   return (
     <>

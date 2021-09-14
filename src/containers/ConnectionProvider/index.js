@@ -14,9 +14,7 @@ const ConnectionProvider = (props) => {
   const [block, setBlock] = useState(0);
   const [signerContract, setSignerContract] = useState(null);
   //const provider = new ethers.providers.JsonRpcProvider('https://arb1.arbitrum.io/rpc');
-  //const provider = new ethers.providers.JsonRpcProvider('https://eth-ropsten.alchemyapi.io/v2/54JcUV7DBrYb9xSsGWSi8yPNl9bd9Cwy');
   const provider = new ethers.providers.JsonRpcProvider('https://arb-mainnet.g.alchemy.com/v2/ujzK1r0pxgv1s85OABnSqENfQbUJ5kD2');
-  //const contractAddress = '0x1e9f9C78089329Dc53313EC541fC5399312aF227';
   const contractAddress = '0x945B6AE5eC8324B1Cc941C41E300cEc60102e4B5';
 
   const dispatch = useDispatch();
@@ -82,7 +80,7 @@ const ConnectionProvider = (props) => {
               const score = res.data[4];
               console.log('tokenId', tokenId.toNumber())
               console.log('score', score)
-              axios.post('http://localhost:8000/scores/',
+              axios.post('http://api.3-body.xyz/scores/',
               {
                 'tokenId': tokenId.toNumber(),
                 'score': score
@@ -105,7 +103,7 @@ const ConnectionProvider = (props) => {
       })
     }
 
-    axios.get('http://localhost:8000/scores/')
+    axios.get('http://api.3-body.xyz/scores/')
     .then(res => {
       load(res.data);
     })
