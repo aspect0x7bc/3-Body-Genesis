@@ -22,6 +22,7 @@ const ConnectionProvider = (props) => {
 
   const connect = async () => {
     if(!window.ethereum) {alert("Please install Metamask"); return;}
+    window.ethereum.enable();
 
     const metamask = new ethers.providers.Web3Provider(window.ethereum, "any");
     metamask.on("network", (newNetwork, oldNetwork) => {
