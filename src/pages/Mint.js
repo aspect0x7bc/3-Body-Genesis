@@ -75,6 +75,7 @@ const Mint = () => {
       <div>
         <h1>Mint</h1>
         <p>Here you can verify that a given name will produce a simulation before you mint it</p>
+        <p>Minting is free, you only need to pay for the price of gas</p>
         <form onSubmit={onSubmit}>
           <label>
             Token name
