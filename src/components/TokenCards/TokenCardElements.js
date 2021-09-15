@@ -27,6 +27,7 @@ export const CardHeader = styled.h1`
   font-size: 24;
   font-weight: bold;
   text-align: center;
+  word-break: break-all;
 `
 
 export const CardRenderBtn = styled.button`
