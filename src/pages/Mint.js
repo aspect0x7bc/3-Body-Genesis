@@ -19,7 +19,7 @@ const Mint = () => {
   const verify = async () => {
     const hash = keccak256(toUtf8Bytes(tokenName));
     axios.post(
-      'http://api.3-body.xyz/solve',
+      'https://cryptic-dawn-48229.herokuapp.com/solve',
       {
         'hash': hash.substring(2),
       })
