@@ -12,7 +12,7 @@ const Home = () => {
 
   const estimateTime = () => {
 
-    const blocksLeft = 13333333 - currentBlock;
+    const blocksLeft = 33333333 - currentBlock;
     const aproxSecondsLeft = 13 * blocksLeft;
     const aproxDaysLeft = Math.floor(aproxSecondsLeft / 86400);
     const modAproxHours = Math.floor((aproxSecondsLeft % 86400) / 3600);
@@ -26,7 +26,7 @@ const Home = () => {
       <h1 className="title">3-Body NFT</h1>
       <h2>Your gateway into the countably infinite universe of imperfect newtonian physics</h2>
       <h1>Current Era: Genesis</h1>
-      <p>In this very first era of 3-body you will have until ethereum block 13333333 ({estimateTime()}) to mint tokens from the <a href= "https://arbiscan.io/token/0x945b6ae5ec8324b1cc941c41e300cec60102e4b5">NotRandom</a> contract.</p>
+      <p>In this very first era of 3-body you will have until ethereum block 33333333 ({estimateTime()}) to mint tokens from the <a href= "https://arbiscan.io/token/0x945b6ae5ec8324b1cc941c41e300cec60102e4b5">NotRandom</a> contract.</p>
       <p>At ethereum block 13333333 a snapshot will be taken of the NotRandom tokens and a new ThreeBodyGenesis NFT will be claimable 1 to 1 for the price of 0.1 ether.</p>
       <p>Prior to the snapshot all NotRandom NFTs will be visable on the token leaderboard along with their rank and score. Please see About for more info on scoring.</p>
       <p>After the snapshot only claimed ThreeBodyGenesis NFTs will be visable.</p>
