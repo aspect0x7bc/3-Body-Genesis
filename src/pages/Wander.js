@@ -24,9 +24,9 @@ const Wander = () => {
       console.log('drand', drand)
       axios
         .post(
-          'https://cryptic-dawn-48229.herokuapp.com/solve',
+          'http://localhost:8000/api/solve/wander',
           {
-            'hash': drand,
+            'drand': drand,
           })
         .then(res => setSolution(res.data))
         .catch(e => console.error(e))

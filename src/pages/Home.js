@@ -4,7 +4,6 @@ import { useCurrentBlock } from '../containers/ConnectionProvider/hooks';
 
 import GithubLogo from '../images/github.png'
 import TwitterLogo from '../images/twitter.png'
-import DiscordLogo from '../images/discord.png'
 
 const Home = () => {
 

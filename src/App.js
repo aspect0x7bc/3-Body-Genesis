@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Tokens from './pages/Tokens'
 import Mint from './pages/Mint'
+import Wander from './pages/Wander'
 
 import Navbar from './components/Navbar'
 
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/" exact component={Home} />
             <Route path="/tokens" exact component={Tokens} />
             <Route path="/mint" exact component={Mint} />
+            <Route path="/wander" exact component={Wander} />
             <Route path="/about" exact component={About} />
           </Switch>
         </Router>

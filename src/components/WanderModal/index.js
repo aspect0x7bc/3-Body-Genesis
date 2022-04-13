@@ -33,8 +33,7 @@ const WanderModal = ({ solution }) => {
     <ModalContainer id='scene-container'>
       <InfoModal isOpen={isOpen} >
         <InfoContent>
-          <h1>This just pulls the latest random hash from drand.love to demonstrate possible 3-body systems</h1>
-          <h1>You can use it as a screensaver of sorts if you like or whatever</h1>
+          <h1>This pulls the current random hash from drand.love to demonstrate possible 3-body systems</h1>
         </InfoContent>
       </InfoModal>
       <InfoWrapper onClick={toggle}>

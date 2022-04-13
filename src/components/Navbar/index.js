@@ -32,6 +32,9 @@ const Navbar = ({ toggle }) => {
             <NavLink exact to="mint" >
               Mint
             </NavLink>
+            <NavLink exact to="wander" >
+              Wander
+            </NavLink>
             <NavLink exact to="about" >
               About
             </NavLink>
