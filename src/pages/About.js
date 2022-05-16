@@ -4,8 +4,6 @@ import eqNewton from '../images/eq_newton.png'
 import eqScore from '../images/eq_score.png'
 
 import GithubLogo from '../images/github.png'
-import TwitterLogo from '../images/twitter.png'
-import DiscordLogo from '../images/discord.png'
 
 const About = () => {
   return (
@@ -22,6 +20,7 @@ const About = () => {
       <p>To convert this hash into a 3-body system we move off chain and generate some initial values (IVs) from the hash.</p>
       <p>These IVs are the position and velocity vectors (xyz) of each of the three bodies. <a href="https://github.com/aspect0x7bc/3-Body-Genesis-Solver/blob/main/solver.py" rel="noopener noreferrer" target="_blank">code</a></p>
       <p>Using these initial conditions and Newton's Law of Gravitation we solve the IVP for time.</p>
+      <p><a href='https://towardsdatascience.com/modelling-the-three-body-problem-in-classical-mechanics-using-python-9dc270ad7767' rel="noopener noreferrer" target="_blank">Gaurav Deshmukh's</a> article was a big help doing this.</p>
       <img src={eqNewton} alt="F = G * m1 * m2 / r^2"/>
       <p>Here this gives us ~1000 points between t = 0 and t = 5 which can then be plotted in 3D space.</p>
       <p>Finally a score is calculated using the equation below.</p>
@@ -29,11 +28,9 @@ const About = () => {
       <img src={eqScore} alt="LaTeX notation: $\textcolor{white}{\frac{1}{n}\sum_{t=0}^{n} \frac{\hat{r}_{1_{t}} \hat{r}_{2_{t}} \hat{r}_{3_{t}}}{3}}$" />
       <p>Where r hat is the normal of the position vector of a body at each time step t, and n is the total number of time steps.</p>
       <hr/>
-      <p>Links to code and socials</p>
+      <p>Link to code</p>
       <footer className="Footer">
         <a href="https://github.com/aspect0x7bc/3-Body-Genesis"><img src={GithubLogo} alt="Github Logo" target="_blank"></img></a>
-        <a href="https://twitter.com/ThreeBodyNFT"><img src={TwitterLogo} alt="Twitter Logo" target="_blank"></img></a>
-        <a href="https://discord.gg/u3duf2AG"><img src={DiscordLogo} alt="Discord Logo" target="_blank"></img></a>
       </footer>
     </div>
   )

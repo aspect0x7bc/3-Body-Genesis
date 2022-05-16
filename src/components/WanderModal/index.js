@@ -33,7 +33,8 @@ const WanderModal = ({ solution }) => {
     <ModalContainer id='scene-container'>
       <InfoModal isOpen={isOpen} >
         <InfoContent>
-          <h1>This pulls the current random hash from drand.love to demonstrate possible 3-body systems</h1>
+          <h1>This pulls the current random hash from drand.love to demonstrate possible 3-body systems.</h1>
+          <h1>If the hash produces an unsolvable system the simulation will not move. Once it gets a new hash it will automatically refresh.</h1>
         </InfoContent>
       </InfoModal>
       <InfoWrapper onClick={toggle}>
